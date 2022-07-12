@@ -1,0 +1,79 @@
+/* .subchild{
+    background-color: aqua;
+}
+
+.products__wrapper > div > div{
+    background-color: rgb(110, 110, 240);
+} */
+
+/* h3.menu ~ div.menu__item{
+    background-color: aqua;
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.form{
+    margin:0 auto;
+    margin-top:100px ;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form__title{
+    margin: 10px 0;
+}
+
+.form__check{
+    margin: 10px 0;
+}
+
+
+.check{
+    display: flex;
+    align-items: center;
+    /* color: rgba(88, 88, 88, 0.788); */
+    font-weight: 700;
+}
+
+.check__field{
+    transition: all .4s ease;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    /* background-color: rgb(131, 145, 145); */
+    border:1px solid rgb(81, 139, 247);
+    margin-right: 10px;
+}
+
+.check__input{
+    appearance: none;
+}
+
+.check__input:checked + .check__field{
+    /* background-color:rgb(87, 128, 241) ; */
+    background: url("../check.png") no-repeat;
+    background-position: center;
+    background-size: 100% 100% ;
+    /* border: none; */
+}
+
+.check__input:hover + .check__field{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.411);
+}
+
+.check__input:disabled + .check__field{
+    background-color: rgb(180, 180, 180);
+    border-color: rgb(180, 180, 180);
+}
+
+.check__input:disabled:hover + .check__field{
+    box-shadow: none;
+}
+
+.check__input:focus + .check__field{
+    box-shadow: 0 0 3px 2px  rgba(0, 62, 233, 0.411);
+}   
